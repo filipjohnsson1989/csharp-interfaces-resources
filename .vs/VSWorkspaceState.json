@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\net60",
+    "\\net60\\module3",
+    "\\net60\\module3\\before",
+    "\\net60\\module3\\before\\Extensibility",
+    "\\net60\\module3\\before\\Extensibility\\PeopleViewer",
+    "\\net60\\module3\\before\\Extensibility\\PeopleViewer\\Controllers",
+    "\\net60\\module3\\before\\Extensibility\\PersonReader.CSV",
+    "\\net60\\module3\\before\\Extensibility\\PersonReader.Interface",
+    "\\net60\\module3\\before\\Extensibility\\PersonReader.Service"
+  ],
+  "SelectedNode": "\\net60\\module3\\before\\Extensibility\\PeopleViewer\\Controllers\\PeopleController.cs",
+  "PreviewInSolutionExplorer": false
+}

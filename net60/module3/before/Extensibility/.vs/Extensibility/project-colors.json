@@ -40,7 +40,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "7b31bb44-4b50-4f7c-ad8f-9cc0a1691c48": {
+      "ProjectGuid": "7b31bb44-4b50-4f7c-ad8f-9cc0a1691c48",
+      "DisplayName": "PersonReader.Service",
+      "ColorIndex": 7
+    },
+    "1ff8d92d-2664-415a-886a-6a1c28d18857": {
+      "ProjectGuid": "1ff8d92d-2664-415a-886a-6a1c28d18857",
+      "DisplayName": "PersonReader.CSV",
+      "ColorIndex": 8
+    },
+    "2950eb70-2833-49f1-a13b-c2411eea74c7": {
+      "ProjectGuid": "2950eb70-2833-49f1-a13b-c2411eea74c7",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 10
 }
