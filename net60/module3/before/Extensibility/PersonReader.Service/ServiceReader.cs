@@ -14,8 +14,6 @@ public class ServiceReader : IPersonReader
         string address = $"{baseUri}/people";
         string reply = client.DownloadString(address);
         return JsonSerializer.Deserialize<IEnumerable<Person>>(reply, options);
-
-
     }
 
     public Person GetPerson(int id)
