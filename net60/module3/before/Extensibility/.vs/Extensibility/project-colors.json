@@ -55,7 +55,12 @@
       "ProjectGuid": "2950eb70-2833-49f1-a13b-c2411eea74c7",
       "DisplayName": "Solution Items",
       "ColorIndex": 9
+    },
+    "0966dcdf-a53a-4626-bcf5-6902ecde7d99": {
+      "ProjectGuid": "0966dcdf-a53a-4626-bcf5-6902ecde7d99",
+      "DisplayName": "PersonReader.Factory",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }
