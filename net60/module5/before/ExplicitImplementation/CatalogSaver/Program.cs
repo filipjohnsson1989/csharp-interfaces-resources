@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Catalog catalog = new();
-        //catalog.Save();
+        catalog.Save();
 
         ISaveable saveable = new Catalog();
         saveable.Save();
@@ -13,7 +13,7 @@ class Program
         (catalog as ISaveable).Save();
 
         var implicitCatalog = new Catalog();
-        //implicitCatalog.Save();
+        implicitCatalog.Save();
 
     }
 }

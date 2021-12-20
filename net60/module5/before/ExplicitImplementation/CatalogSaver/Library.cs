@@ -7,8 +7,7 @@ public interface ISaveable
 
 public class Catalog : ISaveable
 {
-    void ISaveable.Save()
-    {
-        Console.WriteLine("Saved");
-    }
+    void ISaveable.Save() => Console.WriteLine("Saved (interface)");
+
+    public void Save() => Console.WriteLine("Saved (catalog)");
 }
