@@ -11,12 +11,37 @@ public class PeopleControllerTests
     [TestMethod]
     public void PeopleController_OnRuntimeReaderAction_ModelIsPopulated()
     {
-        Assert.Inconclusive();
+        // Arrange
+        IPersonReader reader = new FakeReader();
+        PeopleController controller = new(reader);
+
+        // Act
+        var result = controller.UseRuntimeReader() as ViewResult;
+        Assert.IsNotNull(result,"Controller action failed");
+        var model = result!.Model as IEnumerable<Person>;
+
+        // Assert
+        Assert.IsNotNull(model, "Model property is not populated");
+        Assert.AreEqual(2, model.Count());
+
+
     }
 
     [TestMethod]
     public void PeopleController_OnRuntimeReaderAction_ReaderTypeIsPopulated()
     {
-        Assert.Inconclusive();
+        // Arrange
+        IPersonReader reader = new FakeReader();
+        PeopleController controller = new(reader);
+        var expectedType = "PeopleViewer.Test.FakeReader";
+
+        // Act
+        var result = controller.UseRuntimeReader() as ViewResult;
+        Assert.IsNotNull(result, "Controller action failed");
+        var actualType = result!.ViewData["ReaderType"];
+
+        // Assert
+        Assert.IsNotNull(actualType, "ReaderType is not populated");
+        Assert.AreEqual(expectedType, actualType);
     }
 }
