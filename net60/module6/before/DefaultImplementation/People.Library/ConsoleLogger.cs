@@ -6,4 +6,6 @@ public class ConsoleLogger : IPeopleLogger
     {
         Console.WriteLine($"{DateTimeOffset.Now:T} - {level}: {message}");
     }
+
+    public void LogException(Exception ex) => Log(PeopleLogLevel.Error, $"{DateTimeOffset.Now:T} -Error: {ex.Message}");
 }
