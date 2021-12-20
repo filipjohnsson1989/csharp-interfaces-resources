@@ -8,7 +8,7 @@ public class PeopleController : Controller
 {
     public IActionResult UseConsoleLogger()
     {
-        IPeopleLogger logger = new ConsoleLogger();
+        ConsoleLogger logger = new ConsoleLogger();
         try
         {
             ViewData["Title"] = "Using Console Logger";
@@ -23,7 +23,9 @@ public class PeopleController : Controller
 
     public IActionResult UseFileLogger()
     {
-        IPeopleLogger logger = new FileLogger();
+        //FileLogger logger = new FileLogger();
+        var logger = new FileLogger();
+
         try
         {
             ViewData["Title"] = "Using FileLogger";
@@ -32,7 +34,8 @@ public class PeopleController : Controller
         }
         catch (Exception ex)
         {
-            logger.LogException(ex);
+            //logger.LogException(ex);
+            (logger as IPeopleLogger).LogException(ex);
             return View("Error", new ErrorViewModel());
         }
     }
